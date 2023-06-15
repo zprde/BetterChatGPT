@@ -22,6 +22,7 @@ export const modelOptions: ModelOptions[] = [
   'gpt-3.5-turbo-16k',
   'gpt-4',
   'gpt-4-32k',
+  'bard',
   // 'gpt-3.5-turbo-0301',
   // 'gpt-4-0314',
   // 'gpt-4-32k-0314',
@@ -44,6 +45,10 @@ export const modelMaxToken = {
 };
 
 export const modelCost = {
+  'bard': {
+    prompt: { price: 0.00, unit: 1000 },
+    completion: { price: 0.00, unit: 1000 },
+  },
   'gpt-3.5-turbo': {
     prompt: { price: 0.0015, unit: 1000 },
     completion: { price: 0.002, unit: 1000 },
