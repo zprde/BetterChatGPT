@@ -4,4 +4,4 @@ const customAPIEndpoint =
 export const defaultAPIEndpoint =
   import.meta.env.VITE_DEFAULT_API_ENDPOINT || officialAPIEndpoint;
 
-export const availableEndpoints = [officialAPIEndpoint, customAPIEndpoint];
+export const availableEndpoints = ['/chat', 'chat1', officialAPIEndpoint, customAPIEndpoint];
